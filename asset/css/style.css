@@ -1,11 +1,11 @@
 header {
-  height: 77px;
+  height: 76px;
 }
 body {
   height: 100vh;
 }
 main {
-  height: calc(100% - 77px);
+  height: calc(100% - 76px);
 }
 /* debug */
 /* .debug header {
@@ -28,8 +28,11 @@ main {
 :root {
   --bts--primary: #1b72e8;
   --bts--secondary: #051e34;
+  --bts--element: #165bba;
 }
-
+.bg_element {
+  background-color: var(--bts--element);
+}
 /* end color */
 
 /* utility */
