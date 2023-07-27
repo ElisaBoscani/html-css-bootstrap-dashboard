@@ -1,3 +1,12 @@
+header {
+  height: 77px;
+}
+body {
+  height: 100vh;
+}
+main {
+  height: calc(100% - 77px);
+}
 /* debug */
 /* .debug header {
   height: 150px;
@@ -15,3 +24,23 @@
 [class*="col"] {
   background-color: aquamarine;
 } */
+/* color */
+:root {
+  --bts--primary: #1b72e8;
+  --bts--secondary: #051e34;
+}
+
+/* end color */
+
+/* utility */
+.img_w {
+  width: 50px;
+}
+
+.sidebar {
+  background-color: var(--bts--secondary);
+  background-image: url("/asset/img/sidebar-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*  background-position: top; */
+}
