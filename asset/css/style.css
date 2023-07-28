@@ -39,7 +39,12 @@
 .img_w_s {
   width: 20px;
 }
-
+.w_100 {
+  width: 100%;
+}
+.m_negativ {
+  margin-left: -6rem;
+}
 .sidebar {
   background-color: var(--bts--secondary);
   background-image: url("/asset/img/sidebar-bg.png");
@@ -51,5 +56,8 @@
 @media screen and (min-width: 992px) {
   .w_50_lg {
     width: 50%;
+  }
+  .w_75_lg {
+    width: 75%;
   }
 }
