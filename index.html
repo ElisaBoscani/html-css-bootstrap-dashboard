@@ -22,7 +22,7 @@
   <body class="debug">
     <header>
       <nav class="navbar fixed-top bg-light">
-        <div class="container-fluid flex-nowrap bg-white">
+        <div class="container-fluid flex-nowrap justify-content-start bg-white">
           <a class="navbar-brand"
             ><img
               class="img_w d-lg-none d-xl-none"
@@ -78,19 +78,23 @@
                 ></a>
               </li>
             </ul>
-            <div class="btn-group">
-              <button
-                class="btn dropdown-toggle p-0"
-                type="button"
+            <div class="dropdown pe-3">
+              <a
+                class="btn"
+                href="#"
+                role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <i class="fa-solid fa-bell fa-xl" style="color: #ff8f00"></i>
-              </button>
+              </a>
+
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Profilo</a></li>
                 <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                <li><a class="dropdown-item" href="#">Loging</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Loging</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -101,7 +105,7 @@
     <main>
       <div class="container-fluid h-100">
         <div class="row h-100">
-          <div class="sidebar col-2 col-xl-1 h-100">
+          <div class="sidebar col-1 col-xl-2 h-100 pt-4">
             <div class="container text-center text-light h-100">
               <div
                 class="row flex-column justify-content-between align-content-center h-100"
@@ -157,9 +161,9 @@
               </div>
             </div>
           </div>
-          <div class="content col-10 col-xl-11 p-0">
-            <div class="bg-primary">
-              <div class="container py-3">
+          <div class="content col-11 col-xl-10 p-0 overflow-y-auto">
+            <div class="bg-primary pt-4">
+              <div class="container-fluid py-3">
                 <div class="row flex-column flex-md-row">
                   <div class="col order-md-3">
                     <a
@@ -214,11 +218,58 @@
                 </div>
               </div>
             </div>
-            <div class="row g-3">
-              <div class="col-12 col-lg-8"></div>
-              <div class="col-12 col-lg-4"></div>
-              <div class="col-12 col-lg-8"></div>
-              <div class="col-12 col-lg-4"></div>
+            <div class="container-fluid">
+              <div class="row g-3">
+                <div class="col-12 col-lg-8 pt-3">
+                  <div class="card">
+                    <div class="card-header">Prossime classi</div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Nome</th>
+                              <th scope="col">Data inizio</th>
+                              <th scope="col">ROI</th>
+                              <th scope="col">Stato</th>
+                              <th scope="col">Azioni</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <img
+                                  class="img_w_s"
+                                  src="./asset/img/class-avatar.jpg"
+                                  alt="avatar"
+                                />
+                                Classe 75
+                              </td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Jacob</td>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td colspan="2">Larry the Bird</td>
+                              <td>@twitter</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4"></div>
+                <div class="col-12 col-lg-8"></div>
+                <div class="col-12 col-lg-4"></div>
+              </div>
             </div>
           </div>
         </div>
