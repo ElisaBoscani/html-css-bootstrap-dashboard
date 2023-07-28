@@ -53,11 +53,17 @@
 }
 
 /* media query */
+
 @media screen and (min-width: 992px) {
   .w_50_lg {
     width: 50%;
   }
   .w_75_lg {
     width: 75%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .col_xxs {
+    width: 100%;
   }
 }
